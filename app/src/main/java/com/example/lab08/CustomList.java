@@ -10,6 +10,10 @@ public class CustomList {
         this.cities = new ArrayList<>();
     }
 
+    public int getCount() {
+        return cities.size();
+    }
+
     public void addCity(City city) {
         cities.add(city);
     }
