@@ -23,7 +23,10 @@ public class CustomList {
     }
 
     public void deleteCity(City city) {
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (!cities.contains(city)) {
+            throw new IllegalArgumentException("City not found");
+        }
+        cities.remove(city);
     }
 
     public int countCities() {
