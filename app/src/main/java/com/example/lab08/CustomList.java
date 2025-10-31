@@ -19,17 +19,14 @@ public class CustomList {
     }
 
     public boolean hasCity(City city) {
-        return cities.contains(city);
+        return false;
     }
 
     public void deleteCity(City city) {
-        if (!cities.contains(city)) {
-            throw new IllegalArgumentException("City not found");
-        }
-        cities.remove(city);
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public int countCities() {
-        return cities.size();
+        return 0;
     }
 }
